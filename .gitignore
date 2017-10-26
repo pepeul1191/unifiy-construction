@@ -1,0 +1,6 @@
+*.pyc
+/public/bower_components
+/node_modules
+package-lock.json
+.DS_Store
+db.sqlite3
