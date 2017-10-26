@@ -22,6 +22,7 @@ gulp.task('layout', function() {
     gulp.src([
         MEDIA + 'vendor/icon-awesome/fonts/*', 
         MEDIA + 'vendor/icon-line/fonts/*', 
+        MEDIA + 'vendor/icon-hs/fonts/*', 
     ])
     .pipe(plumber())
     .pipe(gulp.dest(DESTINO));
@@ -44,6 +45,7 @@ gulp.task('layout', function() {
     .pipe(minifyCss())
     .pipe(replace('../icon-awesome/fonts', BASE_URL + 'dist'))
     .pipe(replace('../icon-line/fonts/Simple-Line', BASE_URL + 'dist/Simple-Line'))
+    .pipe(replace('../icon-hs/fonts', BASE_URL + 'dist'))
     .pipe(gulp.dest(DESTINO));
 
     gulp.src([
