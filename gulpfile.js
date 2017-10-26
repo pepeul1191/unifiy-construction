@@ -21,6 +21,7 @@ function errorLog(error){
 gulp.task('layout', function() {
     gulp.src([
         MEDIA + 'vendor/icon-awesome/fonts/*', 
+        MEDIA + 'vendor/icon-line/fonts/*', 
     ])
     .pipe(plumber())
     .pipe(gulp.dest(DESTINO));
@@ -42,6 +43,7 @@ gulp.task('layout', function() {
     .pipe(concatCss('construction.min.css'))
     .pipe(minifyCss())
     .pipe(replace('../icon-awesome/fonts', BASE_URL + 'dist'))
+    .pipe(replace('../icon-line/fonts/Simple-Line', BASE_URL + 'dist/Simple-Line'))
     .pipe(gulp.dest(DESTINO));
 
     gulp.src([
