@@ -1141,7 +1141,7 @@
 
         <!-- Footer -->
         <footer>
-          <div id="contact" class="text-center g-color-gray-dark-v1 g-py-100">
+          <div id="{{secciones.contact}}" class="text-center g-color-gray-dark-v1 g-py-100">
             <div class="container">
               <div class="text-uppercase text-center u-heading-v2-4--bottom g-brd-primary g-mb-45">
                 <h4 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-15">Contact us</h4>
@@ -1295,86 +1295,5 @@
 
     <!-- JS Customization -->
     <script src="<?php echo STATIC_URL; ?>js/custom.js"></script>
-
-    <!-- JS Plugins Init. -->
-    <script>
-      $(document).on('ready', function () {
-        // initialization of carousel
-        $.HSCore.components.HSCarousel.init('.js-carousel');
-
-        $('#carouselCus1').slick('setOption', 'responsive', [{
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 4
-          }
-        }, {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2
-          }
-        }, {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1
-          }
-        }], true);
-
-        $('#carouselCus2').slick('setOption', 'responsive', [{
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 6
-          }
-        }, {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 4
-          }
-        }, {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2
-          }
-        }, {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1
-          }
-        }], true);
-
-        // initialization of header
-        $.HSCore.components.HSHeader.init($('#js-header'));
-        $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-        // initialization of HSScrollNav component
-        $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-          duration: 700,
-          easing: 'easeOutExpo'
-        });
-
-        // initialization of tabs
-        $.HSCore.components.HSTabs.init('[role="tablist"]');
-
-        // initialization of go to section
-        $.HSCore.components.HSGoTo.init('.js-go-to');
-      });
-
-
-      $(window).on('load', function() {
-        // initialization of HSScrollNav
-        $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-          duration: 700,
-          easing: 'easeOutExpo'
-        });
-
-        // initialization of cubeportfolio
-        $.HSCore.components.HSCubeportfolio.init('.cbp');
-      });
-
-      $(window).on('resize', function () {
-        setTimeout(function () {
-          $.HSCore.components.HSTabs.init('[role="tablist"]');
-        }, 200);
-      });
-    </script>
   </body>
 </html>

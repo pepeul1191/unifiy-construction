@@ -12,9 +12,66 @@ var EspaniolView = Backbone.View.extend({
 		initialize: function(){
 				//this.render();
 				//console.log("initialize");
+
 		},
 		render: function() {
 				this.$el.html(this.getTemplate());
+				$.HSCore.components.HSCarousel.init('.js-carousel');
+
+				$('#carouselCus1').slick('setOption', 'responsive', [{
+						breakpoint: 1200, 
+						settings: {
+						slidesToShow: 4
+						}
+						}, {
+						breakpoint: 992,
+						settings: {
+						slidesToShow: 2
+						}
+						}, {
+						breakpoint: 576,
+						settings: {
+						slidesToShow: 1
+						}
+						}], true);
+
+				$('#carouselCus2').slick('setOption', 'responsive', [{
+						breakpoint: 1200,
+						settings: {
+						slidesToShow: 6
+						}
+						}, {
+						breakpoint: 992,
+						settings: {
+						slidesToShow: 4
+						}
+						}, {
+						breakpoint: 768,
+						settings: {
+						slidesToShow: 2
+						}
+						}, {
+						breakpoint: 576,
+						settings: {
+						slidesToShow: 1
+						}
+						}], true);
+
+				// initialization of header
+				$.HSCore.components.HSHeader.init($('#js-header'));
+				$.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+				// initialization of HSScrollNav component
+				$.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+				duration: 700,
+				easing: 'easeOutExpo'
+				});
+
+				// initialization of tabs
+				$.HSCore.components.HSTabs.init('[role="tablist"]');
+
+				// initialization of go to section
+				$.HSCore.components.HSGoTo.init('.js-go-to');
 				return this;
 		},
 		getTemplate: function() {
@@ -44,6 +101,62 @@ var InglesView = Backbone.View.extend({
 		},
 		render: function() {
 				this.$el.html(this.getTemplate());
+				$.HSCore.components.HSCarousel.init('.js-carousel');
+
+				$('#carouselCus1').slick('setOption', 'responsive', [{
+						breakpoint: 1200, 
+						settings: {
+						slidesToShow: 4
+						}
+						}, {
+						breakpoint: 992,
+						settings: {
+						slidesToShow: 2
+						}
+						}, {
+						breakpoint: 576,
+						settings: {
+						slidesToShow: 1
+						}
+						}], true);
+
+				$('#carouselCus2').slick('setOption', 'responsive', [{
+						breakpoint: 1200,
+						settings: {
+						slidesToShow: 6
+						}
+						}, {
+						breakpoint: 992,
+						settings: {
+						slidesToShow: 4
+						}
+						}, {
+						breakpoint: 768,
+						settings: {
+						slidesToShow: 2
+						}
+						}, {
+						breakpoint: 576,
+						settings: {
+						slidesToShow: 1
+						}
+						}], true);
+
+				// initialization of header
+				$.HSCore.components.HSHeader.init($('#js-header'));
+				$.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+				// initialization of HSScrollNav component
+				$.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+				duration: 700,
+				easing: 'easeOutExpo'
+				});
+
+				// initialization of tabs
+				$.HSCore.components.HSTabs.init('[role="tablist"]');
+
+				// initialization of go to section
+				$.HSCore.components.HSGoTo.init('.js-go-to');
 				return this;
 		},
 		getTemplate: function() {
