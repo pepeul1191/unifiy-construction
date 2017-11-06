@@ -11,19 +11,17 @@ var EspaniolView = Backbone.View.extend({
 		getTemplate: function() {
 				var data = { };
 				var template_compiled = null;
-				/*
+				
 				$.ajax({
-				   url: STATICS_URL + 'templates/accesos/sistema.html', 
+				   url: 'http://localhost/jmf/contenido/espaniol', 
 				   type: "GET", 
 				   async: false, 
-				   success: function(source) {
-				   	var template = Handlebars.compile(source);
-				   	template_compiled = template(data);
+				   success: function(data) {
+				   		var contenido = JSON.parse(data);
+				   		console.log(contenido);
 				   }
 				});
-				return template_compiled;
-				*/
-				return '<h1>Español</h1>';
+				return "<h1>Español</h1>";
 		},
 });
 
@@ -40,18 +38,15 @@ var InglesView = Backbone.View.extend({
 		getTemplate: function() {
 				var data = { };
 				var template_compiled = null;
-				/*
 				$.ajax({
-				   url: STATICS_URL + 'templates/accesos/sistema.html', 
+				   url: 'http://localhost/jmf/contenido/ingles', 
 				   type: "GET", 
 				   async: false, 
-				   success: function(source) {
-				   	var template = Handlebars.compile(source);
-				   	template_compiled = template(data);
+				   success: function(data) {
+				   		var contenido = JSON.parse(data);
+				   		console.log(contenido);
 				   }
 				});
-				return template_compiled;
-				*/
 				return '<h1>Ingles</h1>';
 		},
 });
@@ -59,7 +54,7 @@ var InglesView = Backbone.View.extend({
 var Router = Marionette.AppRouter.extend({
 		routes: {
 				'email/:email': 'showEmail',
-				"" : "index", 
+				"" : "espaniol", 
 				"es" : "espaniol",
 				"en" : "ingles",
 				"*actions" : "index"

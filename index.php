@@ -18,6 +18,9 @@ Flight::route('GET /demo/listar', array('Demo','listar'));
 Flight::route('GET /demo/db', array('Demo','listar_usuarios'));
 Flight::route('GET /demo/vista', array('Demo','vista'));
 Flight::route('GET /demo/partial', array('Demo','partial'));
+
+Flight::route('GET /contenido/espaniol', array('Contenido','espaniol'));
+Flight::route('GET /contenido/ingles', array('Contenido','ingles'));
 /*
 Flight::map('notFound', function(){
 	Flight::redirect('/error/404');
