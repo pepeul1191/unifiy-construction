@@ -17,7 +17,7 @@ Flight::route('GET /demo/listar', array('Handler_Demo','listar'));
 #Flight::route('POST /demo/params/@id', array('Handler_Demo','parametros'));
 Flight::route('GET /demo/db', array('Handler_Demo','listar_usuarios'));
 Flight::route('GET /demo/vista', array('Handler_Demo','vista'));
-#Flight::route('GET /demo/partial/@valor', array('Handler_Demo','partial'));
+Flight::route('GET /demo/partial', array('Handler_Demo','partial'));
 /*
 Flight::map('notFound', function(){
 	Flight::redirect('/error/404');
