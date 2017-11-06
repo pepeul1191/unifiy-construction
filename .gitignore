@@ -4,3 +4,4 @@
 package-lock.json
 .DS_Store
 db.sqlite3
+/app/vendor
