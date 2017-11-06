@@ -773,11 +773,11 @@
               <h2 class="u-heading-v2__title g-line-height-1_1 g-font-weight-700 g-font-size-40 g-color-black g-mb-minus-10">Our works</h2>
             </div>
           </div>
-
+           <!--
           <div class="g-pos-rel g-pr-40 g-pr-0--md g-mb-10 g-mb-0--md">
             <div class="g-overflow-x-scroll g-brd-right g-brd-right-none--md g-brd-primary"
                  data-scroll>
-              <!-- Filter -->
+
               <ul id="galleryCubePortfolioFilter" class="nav d-block d-md-flex justify-content-center text-center text-uppercase u-nav-v2-2 g-font-size-12">
                 <li class="cbp-filter-item nav-item d-inline-block cbp-filter-item-active"
                     data-filter="*">
@@ -804,7 +804,6 @@
                   <span class="nav-link g-min-width-110--md py-0 g-py-30--md g-px-10">Construction</span>
                 </li>
               </ul>
-              <!-- End Filter -->
             </div>
 
             <div class="g-hidden-md-up g-absolute-centered--y g-right-5">
@@ -814,7 +813,6 @@
             </div>
           </div>
 
-          <!-- Cubeportfolio -->
           <div id="galleryCubePortfolio" class="cbp"
                data-controls="#galleryCubePortfolioFilter"
                data-layout="grid"
@@ -1079,9 +1077,8 @@
               </a>
             </div>
           </div>
-          <!-- End Cubeportfolio -->
+          -->
         </section>
-        <!-- End Section Content -->
 
         <!-- Section Content -->
         <section id="{{secciones.career}}" class="g-pt-100">
