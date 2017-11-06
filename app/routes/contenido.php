@@ -5,8 +5,8 @@ class Contenido
     public static function demo_espaniol() 
     {
         $data = array(
-            'base_url' => BASE_URL,
-            'static_url' => STATIC_URL,
+            'BASE_URL' => BASE_URL,
+            'STATIC_URL' => STATIC_URL,
             'mensaje' => false,
             'titulo_pagina' => 'Gestión de Accesos', 
             'modulo' => 'Accesos',
@@ -17,8 +17,8 @@ class Contenido
     public static function demo_ingles() 
     {
         $data = array(
-            'base_url' => BASE_URL,
-            'static_url' => STATIC_URL,
+            'BASE_URL' => BASE_URL,
+            'STATIC_URL' => STATIC_URL,
             'mensaje' => false,
             'titulo_pagina' => 'Access Managment', 
             'modulo' => 'Access',
@@ -30,8 +30,8 @@ class Contenido
     public static function home_ingles() 
     {
         $data = array(
-            'base_url' => BASE_URL,
-            'static_url' => STATIC_URL,
+            'BASE_URL' => BASE_URL,
+            'STATIC_URL' => STATIC_URL,
             'menu' => array(
                 array('url' => '#/es/home', 'nombre' => 'Home'),
                 array('url' => '#/es/about', 'nombre' => 'About'),
@@ -52,8 +52,8 @@ class Contenido
     public static function home_espaniol() 
     {
         $data = array(
-            'base_url' => BASE_URL,
-            'static_url' => STATIC_URL,
+            'BASE_URL' => BASE_URL,
+            'STATIC_URL' => STATIC_URL,
             'menu' => array(
                 array('url' => '#/en/home', 'nombre' => 'Home'),
                 array('url' => '#/en/about', 'nombre' => 'Nosotros'),

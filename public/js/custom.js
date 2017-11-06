@@ -11,7 +11,7 @@ var EspaniolView = Backbone.View.extend({
 		getTemplate: function() {
 				var template_compiled = null;
 				$.ajax({
-				   url: 'http://localhost/jmf/contenido/home_espaniol', 
+				   url: BASE_URL + 'contenido/home_espaniol', 
 				   type: "GET", 
 				   async: false, 
 				   success: function(data) {
@@ -40,7 +40,7 @@ var InglesView = Backbone.View.extend({
 		getTemplate: function() {
 				var template_compiled = null;
 				$.ajax({
-				   url: 'http://localhost/jmf/contenido/home_ingles', 
+				   url: BASE_URL + 'contenido/home_ingles', 
 				   type: "GET", 
 				   async: false, 
 				   success: function(data) {
