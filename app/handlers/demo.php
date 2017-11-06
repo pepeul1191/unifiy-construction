@@ -27,8 +27,8 @@ class Handler_Demo
 
     public static function partial()
     {
-        Flight::render('demo/partial', array('heading' => 'Hello'), 'partial');
-        Flight::render('layouts/demo.php', array('data' => 'Bob'));
+        Flight::render('demo/partial', array('data' => 'Bob'), 'partial');
+        Flight::render('layouts/demo.php', array('title' => 'Bienvenido'));
     }
 }
 
