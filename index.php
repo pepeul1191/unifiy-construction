@@ -10,7 +10,7 @@ header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 header('Content-type: text/html; charset=UTF-8');
 
 Flight::set('flight.views.path', 'app/views');
-
+# Demo
 Flight::route('GET /', array('Handler_Index','index'));
 Flight::route('GET /error/404', array('Handler_Error','error_404'));
 Flight::route('GET /demo/listar', array('Handler_Demo','listar'));

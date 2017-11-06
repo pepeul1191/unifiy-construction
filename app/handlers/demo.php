@@ -22,13 +22,13 @@ class Handler_Demo
 
     public static function vista()
     {
-        Flight::render('demo/index.php', array('data' => 'Bob'));
+        Flight::render('demo/index', array('data' => 'Bob'));
     }
 
     public static function partial()
     {
-        Flight::render('demo/partial', array('data' => 'Bob'), 'partial');
-        Flight::render('layouts/demo.php', array('title' => 'Bienvenido'));
+        Flight::render('index/index', array('data' => 'Bob'), 'partial');
+        Flight::render('layouts/demo', array('title' => 'Bienvenido'));
     }
 }
 

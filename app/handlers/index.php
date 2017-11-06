@@ -4,9 +4,8 @@ class Handler_Index
 {
 		public static function index()
 		{
-				//Flight::view()->assign('valor', $valor);
-				Flight::view()->assign('partial', 'index/index.tpl');
-				Flight::view()->display('layouts/site.tpl');
+				Flight::render('index/index', array('data' => 'Bob'), 'partial');
+				Flight::render('layouts/app', array('title' => 'Bienvenido'));
 		}
 }
 
