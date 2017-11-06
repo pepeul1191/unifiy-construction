@@ -19,8 +19,10 @@ Flight::route('GET /demo/db', array('Demo','listar_usuarios'));
 Flight::route('GET /demo/vista', array('Demo','vista'));
 Flight::route('GET /demo/partial', array('Demo','partial'));
 
-Flight::route('GET /contenido/espaniol', array('Contenido','espaniol'));
-Flight::route('GET /contenido/ingles', array('Contenido','ingles'));
+Flight::route('GET /contenido/demo_espaniol', array('Contenido','demo_espaniol'));
+Flight::route('GET /contenido/demo_ingles', array('Contenido','demo_ingles'));
+Flight::route('GET /contenido/home_espaniol', array('Contenido','home_espaniol'));
+Flight::route('GET /contenido/home_ingles', array('Contenido','home_ingles'));
 /*
 Flight::map('notFound', function(){
 	Flight::redirect('/error/404');

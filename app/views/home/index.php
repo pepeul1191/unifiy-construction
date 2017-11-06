@@ -36,12 +36,12 @@
   </head>
 
   <body>
-  		<div class="row">
-  			<div class="container">
-  					<a href="#/es">Español</a>
-							<a href="#/en">Ingles</a>
-  			</div>
-  		</div>
+    <div class="container">
+		  <div class="row" id="idiomas">
+			  <a href="#/es">Español</a>
+        <a href="#/en">English</a>
+			</div>
+		</div>
     <main class="g-pt-75 g-pt-90--md">
       <!-- Header -->
       <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance g-z-index-9999"
@@ -1285,7 +1285,13 @@
       </a>
     </main>
 
+    <script id="template" type="text/x-handlebars-template">
+        <b>Titulo Pagina : </b> {{titulo_pagina}} <br>
+        <b>Módulo : </b> {{modulo}} <br>
+    </script>
+
     <!-- JS Global Compulsory -->
+    <script src="<?php echo STATIC_URL; ?>dist/idiomas.min.js"></script>
     <script src="<?php echo STATIC_URL; ?>vendor/jquery/jquery.min.js"></script>
     <script src="<?php echo STATIC_URL; ?>vendor/jquery-migrate/jquery-migrate.min.js"></script>
     <script src="<?php echo STATIC_URL; ?>vendor/jquery.easing/js/jquery.easing.js"></script>
