@@ -66,32 +66,6 @@
                 <!-- Navigation -->
                 <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
                   <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-font-weight-700 g-font-size-12 g-pt-20 g-pt-0--lg ml-auto">
-                    <!--
-                    <li class="nav-item g-mr-8--lg g-mb-7 g-mb-0--lg active">
-                      <a href="#home" class="nav-link p-0">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item g-mx-8--lg g-mb-7 g-mb-0--lg">
-                      <a href="#about" class="nav-link p-0">About</a>
-                    </li>
-                    <li class="nav-item g-mx-8--lg g-mb-7 g-mb-0--lg">
-                      <a href="#services" class="nav-link p-0">Services</a>
-                    </li>
-                    <li class="nav-item g-mx-8--lg g-mb-7 g-mb-0--lg">
-                      <a href="#recentProjects" class="nav-link p-0">Recent projects</a>
-                    </li>
-                    <li class="nav-item g-mx-8--lg g-mb-7 g-mb-0--lg">
-                      <a href="#testimonials" class="nav-link p-0">Testimonials</a>
-                    </li>
-                    <li class="nav-item g-mx-8--lg g-mb-7 g-mb-0--lg">
-                      <a href="#gallery" class="nav-link p-0">Gallery</a>
-                    </li>
-                    <li class="nav-item g-mx-8--lg g-mb-7 g-mb-0--lg">
-                      <a href="#career" class="nav-link p-0">Career</a>
-                    </li>
-                    <li class="nav-item g-ml-8--lg">
-                      <a href="#contact" class="nav-link p-0">Contact</a>
-                    </li>
-                    -->
                     {{#list_menu menu}}{{/list_menu}}
                   </ul>
                 </div>
@@ -118,7 +92,7 @@
         <!-- End Header -->
 
         <!-- Section Content -->
-        <section id="home">
+        <section id="{{secciones.home}}">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 u-bg-overlay g-flex-centered g-height-100vh--md g-min-height-300 g-bg-img-hero g-bg-black-opacity-0_7--after text-md-right g-py-40 g-pr-50--md" style="background-image: url({{STATIC_URL}}img-temp/700x800/img1.jpg);"
@@ -160,7 +134,7 @@
         <!-- End Section Content -->
 
         <!-- Section Content -->
-        <section id="about">
+        <section id="{{secciones.about}}">
           <div class="u-bg-overlay g-bg-primary g-bg-primary-opacity-0_8--after g-py-40 g-py-10--lg">
             <div class="container text-center text-lg-left g-color-white">
               <div class="row">
@@ -188,7 +162,7 @@
         <!-- End Section Content -->
 
         <!-- Section Content -->
-        <section id="since" class="g-py-80">
+        <section id="{{secciones.since}}" class="g-py-80">
           <div class="container">
             <div class="row">
               <div class="col-md-5 g-mb-30 g-mb-0--md">
@@ -293,7 +267,7 @@
         <!-- End Section Content -->
 
         <!-- Section Content -->
-        <section class="container-fluid px-0">
+        <section clas{{BASE_URL}}{{secciones.recentProjects}}="container-fluid px-0">
           <div class="row no-gutters">
             <div class="col-md-6">
               <div class="u-bg-overlay g-parent g-pos-rel g-min-height-300 g-bg-img-hero g-bg-black-opacity-0_6--after g-overflow-hidden" style="background-image: url({{STATIC_URL}}img-temp/900x506/img1.jpg);">
@@ -361,7 +335,7 @@
         <!-- End Section Content -->
 
         <!-- Section Content -->
-        <section id="services" class="g-py-80">
+        <section id="{{secciones.services}}" class="g-py-80">
           <div class="container">
             <div class="text-uppercase text-center u-heading-v2-4--bottom g-brd-primary g-mb-60">
               <h4 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-15">Our services</h4>
@@ -580,7 +554,7 @@
         <!-- End Section Content -->
 
         <!-- Section Content -->
-        <section id="recentProjects" class="u-bg-overlay g-bg-img-hero g-bg-primary-opacity-0_9--after g-py-100" style="background-image: url({{STATIC_URL}}img-temp/1920x1073/img1.jpg);">
+        <section id="{{secciones.recentProjects}}" class="u-bg-overlay g-bg-img-hero g-bg-primary-opacity-0_9--after g-py-100" style="background-image: url({{STATIC_URL}}img-temp/1920x1073/img1.jpg);">
           <div class="container u-bg-overlay__inner">
             <div class="text-uppercase text-center u-heading-v2-4--bottom g-brd-white g-mb-60">
               <h4 class="g-font-weight-700 g-font-size-12 g-color-white g-mb-15">Recent projects</h4>
@@ -641,7 +615,7 @@
         <!-- End Section Content -->
 
         <!-- Section Content -->
-        <section id="testimonials" class="g-theme-bg-gray-light-v7 g-py-100">
+        <section id="{{secciones.testimonials}}" class="g-theme-bg-gray-light-v7 g-py-100">
           <div class="container text-center g-max-width-750 g-mb-40">
             <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary g-mb-20">
               <h4 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-15">Testimonials</h4>
@@ -754,7 +728,7 @@
         </section>
         <!-- End Section Content -->
 
-        <section id="clients" class="g-bg-img-hero u-bg-overlay g-bg-primary-opacity-0_9--after g-py-80" style="background-image: url({{STATIC_URL}}img-temp/1920x350/img1.jpg);">
+        <section id="{{secciones.clients}}" class="g-bg-img-hero u-bg-overlay g-bg-primary-opacity-0_9--after g-py-80" style="background-image: url({{STATIC_URL}}img-temp/1920x350/img1.jpg);">
           <div class="container u-bg-overlay__inner text-center">
             <div id="carouselCus2" class="js-carousel"
                  data-autoplay="true"
@@ -792,7 +766,7 @@
         </section>
 
         <!-- Section Content -->
-        <section id="gallery" class="g-pt-100">
+        <section id="{{secciones.gallery}}" class="g-pt-100">
           <div class="container">
             <div class="text-uppercase text-center u-heading-v2-4--bottom g-brd-primary g-mb-60">
               <h4 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-15">Gallery</h4>
@@ -1110,7 +1084,7 @@
         <!-- End Section Content -->
 
         <!-- Section Content -->
-        <section id="career" class="g-pt-100">
+        <section id="{{secciones.career}}" class="g-pt-100">
           <div class="container text-center g-max-width-750 g-mb-60">
             <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary g-mb-20">
               <h4 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-15">Career</h4>
