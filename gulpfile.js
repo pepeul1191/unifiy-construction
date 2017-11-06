@@ -72,3 +72,16 @@ gulp.task('layout', function() {
     .pipe(concatJs('construction.min.js'))
     .pipe(gulp.dest(DESTINO));
 });
+
+gulp.task('idiomas', function() {
+    gulp.src([
+        MEDIA + 'bower_components/jquery/dist/jquery.min.js', 
+        MEDIA + 'bower_components/bootstrap/dist/js/bootstrap.min.js', 
+        MEDIA + 'bower_components/underscore/underscore-min.js',
+        MEDIA + 'bower_components/backbone/backbone-min.js', 
+        MEDIA + 'bower_components/backbone.marionette/lib/backbone.marionette.min.js', 
+        MEDIA + 'bower_components/handlebars/handlebars.min.js'])
+    .pipe(plumber())
+    .pipe(concatJs('idiomas.min.js'))
+    .pipe(gulp.dest(DESTINO));
+});
