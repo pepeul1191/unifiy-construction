@@ -2,7 +2,7 @@
 
 require_once 'app/config/models.php';
 
-class Handler_Demo
+class Demo
 {
     public static function hello() 
     {
@@ -12,7 +12,7 @@ class Handler_Demo
     public static function listar() 
     {
         # listar sistemas
-        echo json_encode(Model::factory('Sistema', 'demo')->find_array());
+        echo json_encode(Model::factory('Sistema_model', 'demo')->find_array());
     }
 
     public static function parametros($id) 

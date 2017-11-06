@@ -1,6 +1,6 @@
 <?php
 
-class Handler_Index
+class Index
 {
 		public static function index()
 		{

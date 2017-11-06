@@ -1,6 +1,6 @@
 <?php
 
-class Handler_Error
+class Error
 {
 		public static function error_404()
 		{
