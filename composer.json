@@ -7,7 +7,7 @@
     "autoload": {
 	    "classmap": [
 	      "app/config",
-	      "app/handlers"
+	      "app/routes"
 	    ]
   	},
   	"config": {
