@@ -66,6 +66,7 @@
                 <!-- Navigation -->
                 <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar">
                   <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-font-weight-700 g-font-size-12 g-pt-20 g-pt-0--lg ml-auto">
+                    <!--
                     <li class="nav-item g-mr-8--lg g-mb-7 g-mb-0--lg active">
                       <a href="#home" class="nav-link p-0">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -90,6 +91,8 @@
                     <li class="nav-item g-ml-8--lg">
                       <a href="#contact" class="nav-link p-0">Contact</a>
                     </li>
+                    -->
+                    {{#list_menu menu}}{{/list_menu}}
                   </ul>
                 </div>
                 <!-- End Navigation -->

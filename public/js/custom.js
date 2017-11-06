@@ -1,3 +1,12 @@
+Handlebars.registerHelper('list_menu', function(menu) {
+		rpta = '';
+	  menu.forEach(function(item) {
+	  		rpta = rpta + '<li class="nav-item g-ml-8--lg"><a href="' + BASE_URL + item['url'] + '" class="nav-link p-0">' + item['nombre'] + '</a></li>';
+			});
+
+			return rpta;
+});
+
 var EspaniolView = Backbone.View.extend({
 		el: '#body-app',
 		initialize: function(){
