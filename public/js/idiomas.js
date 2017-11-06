@@ -9,19 +9,21 @@ var EspaniolView = Backbone.View.extend({
 				return this;
 		},
 		getTemplate: function() {
-				var data = { };
 				var template_compiled = null;
-				
 				$.ajax({
 				   url: 'http://localhost/jmf/contenido/espaniol', 
 				   type: "GET", 
 				   async: false, 
 				   success: function(data) {
 				   		var contenido = JSON.parse(data);
-				   		console.log(contenido);
+				   		//console.log(contenido);
+				   		var source = $('#template').html();
+				   		var template = Handlebars.compile(source);
+									template_compiled = template(contenido);
 				   }
 				});
-				return "<h1>Español</h1>";
+
+				return template_compiled;
 		},
 });
 
@@ -36,7 +38,6 @@ var InglesView = Backbone.View.extend({
 				return this;
 		},
 		getTemplate: function() {
-				var data = { };
 				var template_compiled = null;
 				$.ajax({
 				   url: 'http://localhost/jmf/contenido/ingles', 
@@ -44,10 +45,14 @@ var InglesView = Backbone.View.extend({
 				   async: false, 
 				   success: function(data) {
 				   		var contenido = JSON.parse(data);
-				   		console.log(contenido);
+				   		//console.log(contenido);
+				   		var source = $('#template').html();
+				   		var template = Handlebars.compile(source);
+									template_compiled = template(contenido);
 				   }
 				});
-				return '<h1>Ingles</h1>';
+
+				return template_compiled;
 		},
 });
 
