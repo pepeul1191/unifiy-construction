@@ -74,4 +74,4 @@ Composer :
 + http://phpenthusiast.com/blog/how-to-autoload-with-composer
 
 Otros:
-+ http://www.smarty.net/
++ https://github.com/arsenetoumani/jquery-portfolio

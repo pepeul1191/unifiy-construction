@@ -72,6 +72,12 @@ var EspaniolView = Backbone.View.extend({
 
 				// initialization of go to section
 				$.HSCore.components.HSGoTo.init('.js-go-to');
+
+				$('.thumbs').portfolio({
+						cols: 4,
+						transition: 'slideDown'
+				});
+
 				return this;
 		},
 		getTemplate: function() {
@@ -157,6 +163,12 @@ var InglesView = Backbone.View.extend({
 
 				// initialization of go to section
 				$.HSCore.components.HSGoTo.init('.js-go-to');
+
+				$('.thumbs').portfolio({
+						cols: 4,
+						transition: 'slideDown'
+				});
+				
 				return this;
 		},
 		getTemplate: function() {
@@ -210,3 +222,8 @@ var App = Marionette.Application.extend({
 
 var myApp = new App();
 myApp.start();
+
+$(".thumbs").portfolio({
+    cols: 4, // Number of columns you want your thumbnails to take. Default is 3
+    transition: 'slideDown' // What jQuery transition effect you want. Default is slideDown
+});

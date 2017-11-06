@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/hamburgers/hamburgers.min.css">
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/wait-animate.min.css">
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/animate.css">
-    <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/jquery-portfolio/portfolio.jquery.css">
 
     <!-- CSS Template -->
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>css/styles.op-construction.css">
@@ -773,6 +773,171 @@
               <h2 class="u-heading-v2__title g-line-height-1_1 g-font-weight-700 g-font-size-40 g-color-black g-mb-minus-10">Our works</h2>
             </div>
           </div>
+          <ul class="thumbs">
+            <li><a href="#thumb1" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb1.jpg')">
+                <h4>Web development</h4><span class="description">Get the latest technologies</span></a>
+            </li>
+            <li>
+                <a href="#thumb2" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb2.jpg')"><h4>SEO</h4><span class="description">Fast and reliable performance</span></a>
+            </li>
+            <li>
+                <a href="#thumb3" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb3.jpg')"><h4>Web design</h4><span class="description">Slick and responsive website</span></a>
+            </li>
+            <li>
+                <a href="#thumb4" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb4.jpg')"><h4>Project management</h4><span class="description">Reduce costs and increase productivity</span></a>
+            </li>
+            <li>
+                <a href="#thumb5" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb5.jpg')"><h4>Graphic design</h4><span class="description">Brochures, logos, banners</span></a>
+            </li>
+            <li>
+                <a href="#thumb6" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb6.jpg')"><h4>SEO</h4><span class="description">Nunc condimentum magna</span></a>
+            </li>
+            <li>
+                <a href="#thumb7" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb7.jpg')"><h4>Graphic design</h4><span class="description">Nunc condimentum magna</span></a>
+            </li>
+            <li>
+                <a href="#thumb8" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb8.jpg')"><h4>Graphic design</h4><span class="description">Morbi pellentesque quam vitae</span></a>
+            </li>
+            <li>
+                <a href="#thumb9" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb9.jpg')"><h4>Web development</h4><span class="description">Phasellus ultrices, dolor sit amet dapibus</span></a>
+            </li>
+            <li>
+                <a href="#thumb10" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb10.jpg')"><h4>Web design</h4><span class="description">Vivamus massa dolor, commodo</span></a>
+            </li>
+            <li>
+                <a href="#thumb11" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb11.jpg')"><h4>Graphic design</h4><span class="description">Sed lobortis at nisl non pellentesque</span></a>
+            </li>
+            <li>
+                <a href="#thumb12" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb12.jpg')"><h4>Fron-end development</h4><span class="description">Proin lorem est, rhoncus ullamcorper </span></a>
+            </li>
+            <li>
+                <a href="#thumb13" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb13.jpg')"><h4>Web design</h4><span class="description">Quisque suscipit, est a condimentum</span></a>
+            </li>
+            <li>
+                <a href="#thumb13" class="thumbnail" style="background-image: url('{{STATIC_URL}}vendor/jquery-portfolio/images/thumb14.jpg')"><h4>Web design</h4><span class="description">Aenean condimentum diam nibh</span></a>
+            </li>
+          </ul>
+
+          <div class="portfolio-content">
+            <div id="thumb1">
+                <div class="media"><iframe src="//player.vimeo.com/video/69666609?byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                <h1>Web development</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis nisi sit amet metus venenatis, ut congue turpis aliquet. Pellentesque eget elit sollicitudin, feugiat felis in, ornare diam. Morbi blandit sapien nibh, eu pulvinar tortor luctus nec. Aenean lobortis lacus cursus gravida adipiscing. Praesent in odio porta, placerat felis id, viverra est. Nam magna quam, tincidunt eget augue in, aliquet tristique ipsum.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb2">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>SEO</h1>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Integer a posuere tortor. Praesent malesuada mauris massa, non blandit neque tempus nec. Quisque fermentum nunc non hendrerit tempus.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb3">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Web design</h1>
+                <p>Ut condimentum eros bibendum metus lacinia, ac condimentum justo faucibus. Nam nec dui convallis, sodales sapien in, gravida justo. Pellentesque pulvinar massa a nisl iaculis, quis iaculis elit tincidunt.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb4">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Project management</h1>
+                <p>Suspendisse cursus commodo elit, at tempus felis hendrerit vel. Cras condimentum aliquam mauris at blandit. Pellentesque ac velit iaculis, lobortis nibh id, ultricies ante. Fusce vel urna justo. Maecenas rhoncus vel ligula eget feugiat. Maecenas blandit risus eros, vel imperdiet augue dapibus vitae.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb5">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb5">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb5">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb5">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb6">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb7">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb8">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb9">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb10">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb11">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb12">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb13">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div id="thumb14">
+                <div class="media"><img src="{{STATIC_URL}}vendor/jquery-portfolio/images/media.jpg"/></div>
+                <h1>Graphic design</h1>
+                <p>Vestibulum gravida, ante ut consectetur dictum, dolor sapien pretium elit, sed tincidunt augue sem a lorem. Vivamus quis neque pharetra, consequat dolor vel, venenatis urna. Praesent diam quam, fermentum vel tortor eget, pulvinar tincidunt velit.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
            <!--
           <div class="g-pos-rel g-pr-40 g-pr-0--md g-mb-10 g-mb-0--md">
             <div class="g-overflow-x-scroll g-brd-right g-brd-right-none--md g-brd-primary"
@@ -1276,8 +1441,8 @@
 
     <!-- JS Implementing Plugins -->
     <script src="<?php echo STATIC_URL; ?>vendor/appear.js"></script>
-    <script src="<?php echo STATIC_URL; ?>vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
     <script src="<?php echo STATIC_URL; ?>vendor/slick-carousel/slick/slick.js"></script>
+    <script src="<?php echo STATIC_URL; ?>vendor/jquery-portfolio/portfolio.jquery.js"></script>
 
     <!-- JS Unify -->
     <script src="<?php echo STATIC_URL; ?>js/hs.core.js"></script>
@@ -1285,8 +1450,7 @@
     <script src="<?php echo STATIC_URL; ?>js/helpers/hs.hamburgers.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.scroll-nav.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.onscroll-animation.js"></script>
-    <script src="<?php echo STATIC_URL; ?>js/components/hs.tabs.js"></script>
-    <script src="<?php echo STATIC_URL; ?>js/components/hs.cubeportfolio.js"></script>
+    <script src="<?php echo STATIC_URL; ?>js/components/hs.tabs.js"></script>t>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.carousel.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.go-to.js"></script>
 
