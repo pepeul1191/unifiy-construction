@@ -18,17 +18,11 @@ class Handler_Demo
     public static function parametros($id) 
     {
         $query_param = Flight::request()->query['qp'];
-
-    }
-
-    public static function listar_usuarios()
-    {
-
-
     }
 
     public static function vista()
     {
+        Flight::render('demo/index.php', array('data' => 'Bob'));
     }
 
     public static function partial($valor)
