@@ -993,8 +993,8 @@
           <div id="{{secciones.contact}}" class="text-center g-color-gray-dark-v1 g-py-100">
             <div class="container">
               <div class="text-uppercase text-center u-heading-v2-4--bottom g-brd-primary g-mb-45">
-                <h4 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-15">Contact us</h4>
-                <h2 class="u-heading-v2__title g-line-height-1_1 g-font-weight-700 g-font-size-40 g-color-black g-mb-minus-10">Get in touch</h2>
+                <h4 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-15">{{contacto.titulo}}</h4>
+                <h2 class="u-heading-v2__title g-line-height-1_1 g-font-weight-700 g-font-size-40 g-color-black g-mb-minus-10">{{contacto.subtitulo}}</h2>
               </div>
 
               <div class="row">
@@ -1004,26 +1004,26 @@
                       <div class="row mx-0">
                         <div class="col-sm-6 g-brd-left g-brd-bottom g-theme-brd-gray-light-v3 g-px-15 g-py-25">
                           <i class="icon-anchor d-inline-block g-font-size-50 g-color-primary g-mb-30"></i>
-                          <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v2 mb-0">Address</h3>
-                          <strong class="g-font-size-11">Sit amet adipiscing</strong>
+                          <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v2 mb-0">{{contacto.datos_contacto.direccion.titulo}}</h3>
+                          <strong class="g-font-size-11">{{contacto.datos_contacto.direccion.dato}}</strong>
                         </div>
 
                         <div class="col-sm-6 g-brd-left g-brd-bottom g-theme-brd-gray-light-v3 g-px-15 g-py-25">
                           <i class="icon-call-in d-inline-block g-font-size-50 g-color-primary g-mb-30"></i>
-                          <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v2 mb-0">Phone number</h3>
-                          <strong class="g-font-size-11">+402 5448 569</strong>
+                          <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v2 mb-0">{{contacto.datos_contacto.telefono.titulo}}</h3>
+                          <strong class="g-font-size-11">{{contacto.datos_contacto.telefono.dato}}</strong>
                         </div>
 
                         <div class="col-sm-6 g-brd-left g-brd-bottom g-theme-brd-gray-light-v3 g-px-15 g-py-25">
                           <i class="icon-line icon-envelope-letter d-inline-block g-font-size-50 g-color-primary g-mb-30"></i>
-                          <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v2 mb-0">Email</h3>
-                          <a class="g-font-size-11 g-color-gray-dark-v1" href="mailto:info@unify.com"><strong>info@unify.com</strong></a>
+                          <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v2 mb-0">{{contacto.datos_contacto.correo.titulo}}</h3>
+                          <a class="g-font-size-11 g-color-gray-dark-v1" href="mailto:{{contacto.datos_contacto.correo.dato}}"><strong>{{contacto.datos_contacto.correo.dato}}</strong></a>
                         </div>
 
                         <div class="col-sm-6 g-brd-left g-brd-bottom g-theme-brd-gray-light-v3 g-px-15 g-py-25">
                           <i class="icon-earphones-alt d-inline-block g-font-size-50 g-color-primary g-mb-30"></i>
-                          <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v2 mb-0">Toll free</h3>
-                          <strong class="g-font-size-11">+402 5897 660</strong>
+                          <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v2 mb-0">{{contacto.datos_contacto.skype.titulo}}</h3>
+                          <strong class="g-font-size-11">{{contacto.datos_contacto.skype.dato}}</strong>
                         </div>
                       </div>
                     </div>
@@ -1031,30 +1031,29 @@
                 </div>
 
                 <div class="col-md-6">
-                  <form>
-                    <div class="form-group g-mb-10">
-                      <input id="inputGroup1_1" class="form-control g-font-size-default g-color-gray-dark-v5 g-placeholder-inherit g-theme-bg-gray-light-v4 g-brd-transparent g-theme-brd-gray-light-v5--focus g-rounded-1 g-px-20 g-py-12" type="text" placeholder="Your name">
-                    </div>
+                  <label id="lblIdoma" class="oculto">{{contacto.idioma}}</label>
+                  <div class="form-group g-mb-10">
+                    <input id="txtNombre" class="form-control g-font-size-default g-color-gray-dark-v5 g-placeholder-inherit g-theme-bg-gray-light-v4 g-brd-transparent g-theme-brd-gray-light-v5--focus g-rounded-1 g-px-20 g-py-12" type="text" placeholder="{{contacto.place_holder_nombre}}">
+                  </div>
 
-                    <div class="form-group g-mb-10">
-                      <input id="inputGroup1_2" class="form-control g-font-size-default g-color-gray-dark-v5 g-placeholder-inherit g-theme-bg-gray-light-v4 g-brd-transparent g-theme-brd-gray-light-v5--focus g-rounded-1 g-px-20 g-py-12" type="tel" placeholder="Your phone">
-                    </div>
+                  <div class="form-group g-mb-10">
+                    <input id="txtTelefono" class="form-control g-font-size-default g-color-gray-dark-v5 g-placeholder-inherit g-theme-bg-gray-light-v4 g-brd-transparent g-theme-brd-gray-light-v5--focus g-rounded-1 g-px-20 g-py-12" type="tel" placeholder="{{contacto.place_holder_telefono}}">
+                  </div>
 
-                    <div class="form-group g-mb-10">
-                      <input id="inputGroup1_3" class="form-control g-font-size-default g-color-gray-dark-v5 g-placeholder-inherit g-theme-bg-gray-light-v4 g-brd-transparent g-theme-brd-gray-light-v5--focus g-rounded-1 g-px-20 g-py-12" type="text" placeholder="Subject">
-                    </div>
+                  <div class="form-group g-mb-10">
+                    <input id="txtAsunto" class="form-control g-font-size-default g-color-gray-dark-v5 g-placeholder-inherit g-theme-bg-gray-light-v4 g-brd-transparent g-theme-brd-gray-light-v5--focus g-rounded-1 g-px-20 g-py-12" type="text" placeholder="{{contacto.place_holder_asunto}}">
+                  </div>
 
-                    <div class="form-group g-mb-40">
-                      <textarea id="inputGroup1_4" class="form-control g-resize-none g-font-size-default g-color-gray-dark-v5 g-placeholder-inherit g-theme-bg-gray-light-v4 g-brd-transparent g-theme-brd-gray-light-v5--focus g-rounded-1 g-px-20 g-py-12" rows="5" placeholder="Message"></textarea>
-                    </div>
+                  <div class="form-group g-mb-40">
+                    <textarea id="txtMensaje" class="form-control g-resize-none g-font-size-default g-color-gray-dark-v5 g-placeholder-inherit g-theme-bg-gray-light-v4 g-brd-transparent g-theme-brd-gray-light-v5--focus g-rounded-1 g-px-20 g-py-12" rows="5" placeholder="{{contacto.place_holder_mensaje}}"></textarea>
+                  </div>
 
-                    <div class="text-center">
-                      <button class="btn btn-lg u-btn-darkgray u-btn-inset mx-2" type="submit">
-                        <i class="fa fa-arrow-right g-color-primary mr-2"></i>
-                        Send message
-                      </button>
-                    </div>
-                  </form>
+                  <div class="text-center">
+                    <button id="btnEnviar" class="btn btn-lg u-btn-darkgray u-btn-inset mx-2">
+                      <i class="fa fa-arrow-right g-color-primary mr-2"></i>
+                      {{contacto.texto_boton}}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

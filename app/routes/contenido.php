@@ -52,8 +52,22 @@ class Contenido
                 'career' => 'career',
                 'contact' => 'contact',
             ),
-            'titulo_pagina' => 'Gestión de Accesos', 
-            'modulo' => 'Accesos',
+            'contacto' => array(
+                'titulo' => 'Contact Us',
+                'subtitulo' => 'Get In Touch',
+                'idioma' => 'en',
+                'place_holder_nombre' => 'Your name',
+                'place_holder_telefono' => 'Your phone',
+                'place_holder_asunto' => 'Subject',
+                'place_holder_mensaje' => 'Message',
+                'texto_boton' => 'Send Message',
+                'datos_contacto' => array(
+                    'direccion' => array('titulo' => 'Address', 'dato' => 'Mariano Pacheco Street 1073'),
+                    'telefono' => array('titulo' => 'Phone Number','dato' => '472-3041'),
+                    'correo' => array('titulo' => 'Email', 'dato' => 'jvaldivia@softweb.pe'),
+                    'skype' => array('titulo' => 'Toll Free', 'dato' => 'pepe@skype.com'),
+                )
+            ),
         );
         echo json_encode($data);
     }
@@ -84,8 +98,22 @@ class Contenido
                 'career' => 'carrera',
                 'contact' => 'contacto',
             ),
-            'titulo_pagina' => 'Gestión de Accesos', 
-            'modulo' => 'Accesos',
+            'contacto' => array(
+                'titulo' => 'Contacto',
+                'subtitulo' => 'Comuníquese con Nostros',
+                'idioma' => 'es',
+                'place_holder_nombre' => 'Su nombre',
+                'place_holder_telefono' => 'Su teléfono',
+                'place_holder_asunto' => 'Asunto',
+                'place_holder_mensaje' => 'Mensaje',
+                'texto_boton' => 'Enviar Mensaje',
+                'datos_contacto' => array(
+                    'direccion' => array('titulo' => 'Dirección', 'dato' => 'Calle Mariano Pacheco 1073'),
+                    'telefono' => array('titulo' => 'telefono', 'dato' => '472-3041'),
+                    'correo' => array('titulo' => 'Correo Electrónico', 'dato' => 'jvaldivia@softweb.pe'),
+                    'skype' => array('titulo' => 'Llamada grautita', 'dato' => 'pepe@skype.com'),
+                )
+            ),
         );
         echo json_encode($data);
     }

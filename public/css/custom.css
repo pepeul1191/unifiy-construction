@@ -2,3 +2,4 @@
 #idiomas{height: 20px; position: relative; float: right; z-index: 10000;}
 #idiomas>a{font-size: 12px; margin-left: 20px; margin-top: 10px; color: #222;}
 #idiomas>a:hover{font-weight: 800}
+.oculto{display: none;}
