@@ -3,22 +3,17 @@
   <head>
     <!-- Title -->
     <title>Construction | Unify - Responsive Website Template</title>
-
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo STATIC_URL; ?>favicon.ico">
-
     <!-- Google Fonts -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ek+Mukta%3A400%2C600%2C700%7CNiconne%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
-
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/icon-line/css/simple-line-icons.css">
-
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/icon-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/icon-hs/style.css">
@@ -27,18 +22,15 @@
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/animate.css">
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>vendor/jquery-portfolio/portfolio.jquery.css">
-
     <!-- CSS Template -->
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>css/styles.op-construction.css">
-
     <!-- CSS Customization -->
     <link rel="stylesheet" href="<?php echo STATIC_URL; ?>css/custom.css">
     <script type="text/javascript">
-        var BASE_URL = '<?php echo BASE_URL; ?>';
-        var STATIC_URL  = '<?php echo STATIC_URL; ?>';
+      var BASE_URL = '<?php echo BASE_URL; ?>';
+      var STATIC_URL  = '<?php echo STATIC_URL; ?>';
     </script>
   </head>
-
   <body>
     <div class="container">
 		  <div class="row" id="idiomas">
@@ -1133,22 +1125,25 @@
     <script src="<?php echo STATIC_URL; ?>vendor/jquery.easing/js/jquery.easing.js"></script>
     <script src="<?php echo STATIC_URL; ?>vendor/popper.min.js"></script>
     <script src="<?php echo STATIC_URL; ?>vendor/bootstrap/bootstrap.min.js"></script>
-
     <!-- JS Implementing Plugins -->
     <script src="<?php echo STATIC_URL; ?>vendor/appear.js"></script>
     <script src="<?php echo STATIC_URL; ?>vendor/slick-carousel/slick/slick.js"></script>
     <script src="<?php echo STATIC_URL; ?>vendor/jquery-portfolio/portfolio.jquery.js"></script>
-
     <!-- JS Unify -->
     <script src="<?php echo STATIC_URL; ?>js/hs.core.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.header.js"></script>
-    <script src="<?php echo STATIC_URL; ?>js/helpers/hs.hamburgers.js"></script>
+    <script src="<?php echo STATIC_URL; ?>helpers/hs.hamburgers.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.scroll-nav.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.onscroll-animation.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.tabs.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.carousel.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.go-to.js"></script>
-
+    <!-- JS Backbone - Marionette -->
+    <script src="<?php echo STATIC_URL; ?>layouts/site.js"></script>
+    <script src="<?php echo STATIC_URL; ?>views/_form_contacto.js"></script>
+    <script src="<?php echo STATIC_URL; ?>views/espaniol.js"></script>
+    <script src="<?php echo STATIC_URL; ?>views/ingles.js"></script>
+    <script src="<?php echo STATIC_URL; ?>routes/site.js"></script>
     <!-- JS Customization -->
     <script src="<?php echo STATIC_URL; ?>js/custom.js"></script>
   </body>
