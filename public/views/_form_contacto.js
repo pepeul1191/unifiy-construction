@@ -9,7 +9,7 @@ var FormContactoView = Backbone.View.extend({
 		validarNombreLleno: function(event) {
 				if($("#txtNombre").val() == ""){
 						$("#txtNombre").addClass("has-error");
-						$("#txtNombre").attr("placeholder", "Tiene que ingresar su nombre");
+						$("#txtNombre").attr("placeholder", this.model['nombre_lleno_mensaje']);
 		    this.model.set({nombre_lleno : false});
 				}else{
 						$("#txtNombre").removeClass("has-error");
@@ -20,7 +20,7 @@ var FormContactoView = Backbone.View.extend({
 		validarTelefonoLleno: function(event) {
 				if($("#txtTelefono").val() == ""){
 						$("#txtTelefono").addClass("has-error");
-		    $("#txtTelefono").attr("placeholder", "Tiene que ingresar su teléfono");
+		    $("#txtTelefono").attr("placeholder", this.model['telefono_lleno_mensaje']);
 		    this.model.set({telefono_lleno : false});
 				}else{
 						$("#txtTelefono").removeClass("has-error");
@@ -31,7 +31,7 @@ var FormContactoView = Backbone.View.extend({
 		validarAsuntoLleno: function(event) {
 				if($("#txtAsunto").val() == ""){
 						$("#txtAsunto").addClass("has-error");
-		    $("#txtAsunto").attr("placeholder", "Tiene que ingresar un asunto");
+		    $("#txtAsunto").attr("placeholder", this.model['asunto_lleno_mensaje']);
 		    this.model.set({asunto_lleno : false});
 				}else{
 						$("#txtAsunto").removeClass("has-error");
@@ -42,7 +42,7 @@ var FormContactoView = Backbone.View.extend({
 		validarMensajeLleno: function(event) {
 				if($("#txtMensaje").val() == ""){
 						$("#txtMensaje").addClass("has-error");
-		    $("#txtMensaje").attr("placeholder", "Tiene que ingresar un mensaje");
+		    $("#txtMensaje").attr("placeholder", this.model['mensaje_lleno_mensaje']);
 		    this.model.set({mensaje_lleno : false});
 				}else{
 						$("#txtMensaje").removeClass("has-error");
