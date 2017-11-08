@@ -12,6 +12,7 @@ header('Content-type: text/html; charset=UTF-8');
 Flight::set('flight.views.path', 'app/views');
 # Demo
 Flight::route('GET /', array('Home','index'));
+Flight::route('GET /dist', array('Home','dist'));
 Flight::route('GET /error/404', array('Error','error_404'));
 Flight::route('GET /demo/listar', array('Demo','listar'));
 #Flight::route('POST /demo/params/@id', array('Demo','parametros'));

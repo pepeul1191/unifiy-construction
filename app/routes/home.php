@@ -6,6 +6,11 @@ class Home
 		{
 				Flight::render('home/index', array('data' => 'Bodb'));
 		}
+
+		public static function dist()
+		{
+				Flight::render('home/dist', array('data' => 'Bodb'));
+		}
 }
 
 ?>
