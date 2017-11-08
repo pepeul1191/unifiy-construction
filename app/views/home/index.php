@@ -990,7 +990,7 @@
 
         <!-- Footer -->
         <footer>
-          <div id="{{secciones.contact}}" class="text-center g-color-gray-dark-v1 g-py-100">
+          <div id="{{secciones.contact}}" class="text-center g-color-gray-dark-v1 g-py-100 contacto-form">
             <div class="container">
               <div class="text-uppercase text-center u-heading-v2-4--bottom g-brd-primary g-mb-45">
                 <h4 class="g-font-weight-700 g-font-size-12 g-color-primary g-mb-15">{{contacto.titulo}}</h4>
@@ -1138,10 +1138,12 @@
     <script src="<?php echo STATIC_URL; ?>js/components/hs.carousel.js"></script>
     <script src="<?php echo STATIC_URL; ?>js/components/hs.go-to.js"></script>
     <!-- JS Backbone - Marionette -->
-    <script src="<?php echo STATIC_URL; ?>layouts/site.js"></script>
+    <script src="<?php echo STATIC_URL; ?>models/contacto_espaniol.js"></script>
+    <script src="<?php echo STATIC_URL; ?>models/contacto_ingles.js"></script>
     <script src="<?php echo STATIC_URL; ?>views/_form_contacto.js"></script>
     <script src="<?php echo STATIC_URL; ?>views/espaniol.js"></script>
     <script src="<?php echo STATIC_URL; ?>views/ingles.js"></script>
+    <script src="<?php echo STATIC_URL; ?>layouts/site.js"></script>
     <script src="<?php echo STATIC_URL; ?>routes/site.js"></script>
     <!-- JS Customization -->
     <script src="<?php echo STATIC_URL; ?>js/custom.js"></script>

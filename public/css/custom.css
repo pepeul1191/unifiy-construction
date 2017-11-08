@@ -3,3 +3,5 @@
 #idiomas>a{font-size: 12px; margin-left: 20px; margin-top: 10px; color: #222;}
 #idiomas>a:hover{font-weight: 800}
 .oculto{display: none;}
+.has-error::-webkit-input-placeholder {color: #a94442;}
+.has-error {border: #a94442 1px solid !important;}

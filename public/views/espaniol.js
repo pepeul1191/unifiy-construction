@@ -7,6 +7,9 @@ var EspaniolView = Backbone.View.extend({
 		},
 		render: function() {
 				this.$el.html(this.getTemplate());
+				var contacto = new ContactoEspaniol();
+				var x = new FormContactoView({model:contacto});
+
 				$.HSCore.components.HSCarousel.init('.js-carousel');
 
 				$('#carouselCus1').slick('setOption', 'responsive', [{
